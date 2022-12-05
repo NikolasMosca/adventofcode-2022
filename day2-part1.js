@@ -2538,6 +2538,5 @@ const playThisMatch = ([opponentChoice, myChoice]) => {
 }
 
 const strategy = (strategyGuide.split(`\n`)).map(item => item.split(` `))
-
 const totalScore = strategy.reduce((score, item) => score + playThisMatch(item), 0)
 console.log(totalScore)
